@@ -1,0 +1,9 @@
+{
+  "fixture": "fab-ingest-smoke-001",
+  "expected_command": "uv run fab --store <temp-store> ingest-run --from <alexandria>/artifacts/safety-finetuning-pilot/ws_001/fab-ingest-smoke-001",
+  "expected_packet": {
+    "workstream_id": "ws_001",
+    "source": "alexandria/safety-finetuning-pilot/ws_001/fab-ingest-smoke-001",
+    "status": "completed_with_limitations"
+  }
+}

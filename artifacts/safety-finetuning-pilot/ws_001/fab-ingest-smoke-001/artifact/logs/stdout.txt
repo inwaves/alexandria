@@ -1,0 +1,1 @@
+fab ingest smoke fixture: no external execution was run

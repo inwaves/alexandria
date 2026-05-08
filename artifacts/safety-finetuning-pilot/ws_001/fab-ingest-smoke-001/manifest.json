@@ -1,0 +1,34 @@
+{
+  "workstream_id": "ws_001",
+  "contract": {
+    "id": "contract_pilot_a3_false_positive",
+    "version": 1
+  },
+  "source": "alexandria/safety-finetuning-pilot/ws_001/fab-ingest-smoke-001",
+  "summary": "Smoke-tested the Alexandria-to-Fab ingest boundary with a persistent fixture bundle.",
+  "status": "completed_with_limitations",
+  "claims": [
+    "A completed Alexandria run bundle can be ingested into a Fab pilot store without the agent cloning Fab."
+  ],
+  "evidence": [
+    {
+      "summary": "The fixture bundle contains a manifest, report, artifact files, and READY marker.",
+      "path": "artifact/report.md"
+    },
+    {
+      "summary": "The smoke result records the intended Fab command and expected packet append.",
+      "path": "artifact/results/smoke-result.json"
+    }
+  ],
+  "limitations": [
+    "This is a connection smoke test; it does not validate commit watching or exactly-once ingest."
+  ],
+  "next": [
+    "Add an Alexandria watcher that discovers completed bundles and calls the same ingest-run validation path."
+  ],
+  "used_refs": [
+    "alexandria://papers/a3-an-automated-alignment-agent-for-safety-finetun.md",
+    "fab://contract/contract_pilot_a3_false_positive/v1",
+    "fab://ws_001"
+  ]
+}

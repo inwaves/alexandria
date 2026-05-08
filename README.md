@@ -8,6 +8,13 @@ Agents can write completed artifact bundles under `artifacts/`. Humans and Fab c
 
 This initial seed contains public-safe notes on scalable oversight and weak-to-strong generalization copied from the earlier research substrate. Frontmatter is intentionally minimal: `title`, `url`, and `created` when available.
 
+## Fab Ingest Smoke Fixture
+
+The bundle at `artifacts/safety-finetuning-pilot/ws_001/fab-ingest-smoke-001/`
+is a durable smoke fixture for Fab's remote ingest boundary. It targets Fab's
+pilot contract and can be ingested into a temporary Fab store seeded with
+`fab pilot-fixture`.
+
 ## Expected Agent Artifact Shape
 
 ```text
