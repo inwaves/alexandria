@@ -1,0 +1,70 @@
+{
+  "correlations_with_bootstrap_advantage": {
+    "weak_strong_gap": 0.705027648129416,
+    "weak_accuracy": -0.78852798429183,
+    "direct_error_overlap": 0.6533307821961282,
+    "weak_supervisor_accuracy": -0.7690606726578606
+  },
+  "strongest_predictor": [
+    "weak_accuracy",
+    -0.78852798429183
+  ],
+  "signals_data": [
+    {
+      "weak_strong_gap": 0.39999999999999997,
+      "weak_accuracy": 0.3,
+      "medium_accuracy": 0.5,
+      "weak_supervisor_accuracy": 0.3084,
+      "direct_error_overlap": 0.35459999999999997,
+      "bootstrap_advantage": 0.04619999999999998
+    },
+    {
+      "weak_strong_gap": 0.6000000000000001,
+      "weak_accuracy": 0.3,
+      "medium_accuracy": 0.6,
+      "weak_supervisor_accuracy": 0.3136,
+      "direct_error_overlap": 0.269,
+      "bootstrap_advantage": 0.07260000000000007
+    },
+    {
+      "weak_strong_gap": 0.7,
+      "weak_accuracy": 0.2,
+      "medium_accuracy": 0.5,
+      "weak_supervisor_accuracy": 0.2184,
+      "direct_error_overlap": 0.3036,
+      "bootstrap_advantage": 0.08259999999999997
+    },
+    {
+      "weak_strong_gap": 0.4,
+      "weak_accuracy": 0.4,
+      "medium_accuracy": 0.6,
+      "weak_supervisor_accuracy": 0.41200000000000003,
+      "direct_error_overlap": 0.2614,
+      "bootstrap_advantage": 0.040999999999999925
+    },
+    {
+      "weak_strong_gap": 0.8,
+      "weak_accuracy": 0.1,
+      "medium_accuracy": 0.3,
+      "weak_supervisor_accuracy": 0.10899999999999999,
+      "direct_error_overlap": 0.348,
+      "bootstrap_advantage": 0.07159999999999996
+    },
+    {
+      "weak_strong_gap": 0.6000000000000001,
+      "weak_accuracy": 0.2,
+      "medium_accuracy": 0.7,
+      "weak_supervisor_accuracy": 0.2172,
+      "direct_error_overlap": 0.3568,
+      "bootstrap_advantage": 0.10779999999999998
+    },
+    {
+      "weak_strong_gap": 0.4,
+      "weak_accuracy": 0.5,
+      "medium_accuracy": 0.6,
+      "weak_supervisor_accuracy": 0.492,
+      "direct_error_overlap": 0.19699999999999998,
+      "bootstrap_advantage": 0.02420000000000002
+    }
+  ]
+}

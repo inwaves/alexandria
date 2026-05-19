@@ -1,0 +1,54 @@
+{
+  "total_experiments": 15,
+  "performance_summary": {
+    "pgr_mean": 0.13333333333333333,
+    "pgr_std": 0.33993463423951903,
+    "pgr_min": 0.0,
+    "pgr_max": 1.0,
+    "imitation_mean": 1.0,
+    "imitation_std": 0.0,
+    "high_imitation_rate": 1.0
+  },
+  "indicator_analysis": {
+    "disagreement_rate": {
+      "correlation_with_pgr": -0.2876770270565151,
+      "correlation_with_imitation": NaN,
+      "auc_for_low_pgr_prediction": 0.5,
+      "prediction_direction": "none",
+      "mean_value": 0.21333333333333335,
+      "std_value": 0.23633074751758862
+    },
+    "confidence_on_disagreement": {
+      "correlation_with_pgr": -0.307373466679158,
+      "correlation_with_imitation": NaN,
+      "auc_for_low_pgr_prediction": 0.5,
+      "prediction_direction": "none",
+      "mean_value": 0.011043424757184705,
+      "std_value": 0.011902008294457918
+    },
+    "mean_entropy": {
+      "correlation_with_pgr": 0.5889791954215481,
+      "correlation_with_imitation": NaN,
+      "auc_for_low_pgr_prediction": 0.5,
+      "prediction_direction": "none",
+      "mean_value": 0.6905882155289677,
+      "std_value": 0.001278370313751417
+    },
+    "weak_loss": {
+      "correlation_with_pgr": 0.4315052684656024,
+      "correlation_with_imitation": NaN,
+      "auc_for_low_pgr_prediction": 0.5,
+      "prediction_direction": "none",
+      "mean_value": 0.6918450494583102,
+      "std_value": 0.0035655619892714712
+    },
+    "prediction_variance": {
+      "correlation_with_pgr": -0.5808587204375266,
+      "correlation_with_imitation": NaN,
+      "auc_for_low_pgr_prediction": 0.5,
+      "prediction_direction": "none",
+      "mean_value": 0.0008882943313606697,
+      "std_value": 0.0004406259488851597
+    }
+  }
+}

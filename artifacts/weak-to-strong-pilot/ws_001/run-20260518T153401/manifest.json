@@ -1,0 +1,47 @@
+{
+  "workstream_id": "ws_001",
+  "contract": {
+    "id": "contract_w2s_generalization",
+    "version": 1
+  },
+  "source": "podium/coding-generic/ws_001",
+  "summary": "Synthetic weak-to-strong generalization study mapping performance gap recovery (PGR) vs imitation across supervisor capacity and noise levels. Found imitation-dominant regime with mean PGR=0.038 and imitation score=0.716 across all conditions, suggesting naive weak-label training primarily learns supervisor errors rather than eliciting capabilities.",
+  "status": "completed_with_limitations",
+  "claims": [
+    "Naive weak-label finetuning in synthetic settings strongly favors imitation over capability recovery (mean imitation=0.716 vs mean PGR=0.038)",
+    "All tested regime conditions (3x3 grid of capacity/noise levels) showed high imitation (>0.6) and low PGR (<0.1)",
+    "Higher-capacity supervisors paradoxically yielded worse PGR (0.0-0.10) than low-capacity ones (0.05-0.07)",
+    "Systematic label noise maintains imitation behavior with minimal impact on error agreement rates",
+    "Large performance gaps (17-37 percentage points) between weak/strong models provide room for recovery but PGR remains minimal"
+  ],
+  "evidence": [
+    {
+      "summary": "Detailed experimental results showing PGR and imitation scores for 9 capacity/noise combinations",
+      "path": "artifact/results/detailed_results.json"
+    },
+    {
+      "summary": "Statistical summary of regime map with means, standard deviations, and regime counts",
+      "path": "artifact/results/summary.json"
+    },
+    {
+      "summary": "Visual regime maps showing PGR and imitation score heatmaps across parameter space",
+      "path": "artifact/results/regime_maps.png"
+    }
+  ],
+  "limitations": [
+    "Small synthetic dataset (500 samples, 10 features) limits generalizability to real W2S scenarios",
+    "Fixed strong student architecture same as baseline may bias toward imitation over capability elicitation",
+    "Coarse 3x3 parameter grid may miss finer regime boundaries or transition zones",
+    "Simple systematic noise model (label flipping) may not capture complex real supervisor error patterns",
+    "Single random seed evaluation provides limited statistical robustness",
+    "Short training periods (max 300 iterations) may not allow sufficient time for capability recovery"
+  ],
+  "next": [
+    "Test confidence-weighted training using supervisor uncertainty to reduce imitation pressure",
+    "Evaluate architectural diversity between supervisors and students to promote capability transfer",
+    "Expand to real datasets and tasks to validate synthetic regime findings",
+    "Study training dynamics to identify when imitation behavior emerges during optimization",
+    "Investigate multi-supervisor ensembles to dilute systematic error patterns"
+  ],
+  "used_refs": []
+}
