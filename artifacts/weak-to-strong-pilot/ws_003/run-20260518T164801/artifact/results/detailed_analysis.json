@@ -1,0 +1,71 @@
+{
+  "by_weak_strong_gap": {
+    "0.4": {
+      "count": 3,
+      "avg_bootstrap_advantage": 0.0371333333333333,
+      "avg_error_overlap_reduction": 0.045399999999999996,
+      "avg_accuracy_improvement": 0.03713333333333324
+    },
+    "0.6": {
+      "count": 2,
+      "avg_bootstrap_advantage": 0.09020000000000003,
+      "avg_error_overlap_reduction": 0.12230000000000002,
+      "avg_accuracy_improvement": 0.09020000000000006
+    },
+    "0.7": {
+      "count": 1,
+      "avg_bootstrap_advantage": 0.08259999999999997,
+      "avg_error_overlap_reduction": 0.09439999999999998,
+      "avg_accuracy_improvement": 0.0825999999999999
+    },
+    "0.8": {
+      "count": 1,
+      "avg_bootstrap_advantage": 0.07159999999999996,
+      "avg_error_overlap_reduction": 0.08399999999999991,
+      "avg_accuracy_improvement": 0.07159999999999989
+    }
+  },
+  "by_weak_accuracy": {
+    "0.3": {
+      "count": 2,
+      "avg_bootstrap_advantage": 0.05940000000000002,
+      "avg_error_overlap_reduction": 0.0761,
+      "avg_accuracy_improvement": 0.05940000000000001
+    },
+    "0.2": {
+      "count": 2,
+      "avg_bootstrap_advantage": 0.09519999999999998,
+      "avg_error_overlap_reduction": 0.1257,
+      "avg_accuracy_improvement": 0.09519999999999995
+    },
+    "0.4": {
+      "count": 1,
+      "avg_bootstrap_advantage": 0.040999999999999925,
+      "avg_error_overlap_reduction": 0.04920000000000002,
+      "avg_accuracy_improvement": 0.040999999999999814
+    },
+    "0.1": {
+      "count": 1,
+      "avg_bootstrap_advantage": 0.07159999999999996,
+      "avg_error_overlap_reduction": 0.08399999999999991,
+      "avg_accuracy_improvement": 0.07159999999999989
+    },
+    "0.5": {
+      "count": 1,
+      "avg_bootstrap_advantage": 0.02420000000000002,
+      "avg_error_overlap_reduction": 0.022399999999999975,
+      "avg_accuracy_improvement": 0.0242
+    }
+  },
+  "error_reduction_analysis": {
+    "avg_direct_error_overlap": 0.2986285714285714,
+    "avg_bootstrap_error_overlap": 0.21874285714285716,
+    "avg_error_overlap_reduction": 0.07988571428571427,
+    "cases_with_error_reduction": 7
+  },
+  "supervision_quality_analysis": {
+    "avg_weak_supervisor_accuracy": 0.2958,
+    "avg_medium_supervisor_accuracy": 0.42105714285714285,
+    "supervisor_quality_improvement": 0.12525714285714287
+  }
+}

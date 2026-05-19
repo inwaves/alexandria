@@ -1,0 +1,9 @@
+{
+  "total_configs": 7,
+  "bootstrap_wins": 7,
+  "bootstrap_neutral": 0,
+  "bootstrap_loses": 0,
+  "avg_bootstrap_advantage": 0.0637142857142857,
+  "best_bootstrap_advantage": 0.10779999999999998,
+  "worst_bootstrap_advantage": 0.02420000000000002
+}

@@ -1,0 +1,129 @@
+{
+  "capacity_levels": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "noise_levels": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "pgr_map": [
+    [
+      0.05454545454545459,
+      0.099999999999999,
+      0.099999999999999
+    ],
+    [
+      0.0181818181818183,
+      0.0,
+      0.0
+    ],
+    [
+      0.07272727272727289,
+      0.0,
+      0.0
+    ]
+  ],
+  "imitation_map": [
+    [
+      0.7564102564102564,
+      0.696969696969697,
+      0.696969696969697
+    ],
+    [
+      0.7051282051282052,
+      0.7575757575757576,
+      0.696969696969697
+    ],
+    [
+      0.6153846153846154,
+      0.7575757575757576,
+      0.7575757575757576
+    ]
+  ],
+  "detailed_results": [
+    {
+      "capacity_level": 0.0,
+      "noise_level": 0.0,
+      "weak_acc": 0.48,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.5,
+      "pgr": 0.05454545454545459,
+      "imitation_score": 0.7564102564102564
+    },
+    {
+      "capacity_level": 0.5,
+      "noise_level": 0.0,
+      "weak_acc": 0.78,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.7866666666666666,
+      "pgr": 0.099999999999999,
+      "imitation_score": 0.696969696969697
+    },
+    {
+      "capacity_level": 1.0,
+      "noise_level": 0.0,
+      "weak_acc": 0.78,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.7866666666666666,
+      "pgr": 0.099999999999999,
+      "imitation_score": 0.696969696969697
+    },
+    {
+      "capacity_level": 0.0,
+      "noise_level": 0.5,
+      "weak_acc": 0.48,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.4866666666666667,
+      "pgr": 0.0181818181818183,
+      "imitation_score": 0.7051282051282052
+    },
+    {
+      "capacity_level": 0.5,
+      "noise_level": 0.5,
+      "weak_acc": 0.78,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.7266666666666667,
+      "pgr": 0.0,
+      "imitation_score": 0.7575757575757576
+    },
+    {
+      "capacity_level": 1.0,
+      "noise_level": 0.5,
+      "weak_acc": 0.78,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.7733333333333333,
+      "pgr": 0.0,
+      "imitation_score": 0.696969696969697
+    },
+    {
+      "capacity_level": 0.0,
+      "noise_level": 1.0,
+      "weak_acc": 0.48,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.5066666666666667,
+      "pgr": 0.07272727272727289,
+      "imitation_score": 0.6153846153846154
+    },
+    {
+      "capacity_level": 0.5,
+      "noise_level": 1.0,
+      "weak_acc": 0.78,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.6866666666666666,
+      "pgr": 0.0,
+      "imitation_score": 0.7575757575757576
+    },
+    {
+      "capacity_level": 1.0,
+      "noise_level": 1.0,
+      "weak_acc": 0.78,
+      "strong_acc": 0.8466666666666667,
+      "student_acc": 0.7,
+      "pgr": 0.0,
+      "imitation_score": 0.7575757575757576
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "workstream_id": "ws_004",
+  "contract": {
+    "id": "contract_w2s_generalization",
+    "version": 1
+  },
+  "source": "podium/coding-generic/ws_004",
+  "summary": "Demonstrated how automated W2S researchers exhibit optimism bias when repeatedly querying held-out validation sets. Quantified 2.0pp bias after 750 submissions and proposed concrete protocols (submission budgets, holdout rotation) to bound the leakage.",
+  "status": "completed_with_limitations",
+  "claims": [
+    "Repeated submission to held-out validation inflates apparent W2S progress by 2.0 percentage points over 750 evaluations",
+    "Optimism bias emerges sharply around 50 submissions, with bias ratio reaching 300%",
+    "Bias causes apparent improvement (+1.2%) while actual test performance degrades (-0.8%)",
+    "Submission budget limits of 50 evaluations per held-out set can bound optimism bias",
+    "Holdout rotation across 3 fresh splits reduces prolonged exposure to any single validation set"
+  ],
+  "evidence": [
+    {
+      "summary": "Main experiment showing 2.0pp optimism bias over 50 iterations with 15 methods each",
+      "path": "artifact/results/experiment_results.json"
+    },
+    {
+      "summary": "Submission budget analysis showing bias threshold at 50 submissions",
+      "path": "artifact/results/protocol_analysis.json"
+    }
+  ],
+  "limitations": [
+    "Synthetic task may not reflect real W2S generalization patterns",
+    "Simple method variants may not capture complex W2S approach diversity",
+    "Fixed data splits rather than dynamic splitting protocols",
+    "Gaussian noise model may not match real method uncertainty",
+    "Single accuracy metric rather than multi-objective optimization"
+  ],
+  "next": [
+    "Validate on real W2S benchmarks with larger language models",
+    "Test bias patterns across diverse W2S methods beyond simple hyperparameter variants",
+    "Develop adaptive submission budgets based on real-time bias estimation",
+    "Implement meta-learning for automated researchers to detect their own overfitting"
+  ],
+  "used_refs": [
+    "alexandria://papers/weak-to-strong-generalization.md"
+  ]
+}

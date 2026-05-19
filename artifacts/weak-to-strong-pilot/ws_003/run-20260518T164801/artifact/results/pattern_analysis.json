@@ -1,0 +1,12 @@
+{
+  "bootstrap_winners": {
+    "count": 7,
+    "avg_weak_strong_gap": 0.5571428571428572,
+    "avg_weak_medium_gap": 0.2571428571428571,
+    "avg_medium_strong_gap": 0.3000000000000001,
+    "avg_weak_acc": 0.2857142857142857,
+    "avg_bootstrap_advantage": 0.0637142857142857
+  },
+  "bootstrap_losers": {},
+  "total_results": 7
+}

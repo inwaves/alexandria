@@ -1,0 +1,9 @@
+{
+  "total_experiments": 9,
+  "mean_pgr": 0.0383838383838382,
+  "mean_imitation_score": 0.7156177156177157,
+  "high_pgr_low_imitation_count": 0,
+  "high_imitation_low_pgr_count": 9,
+  "pgr_std": 0.04127841766000483,
+  "imitation_std": 0.04490163725090698
+}

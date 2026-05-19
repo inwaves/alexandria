@@ -1,0 +1,62 @@
+{
+  "workstream_id": "ws_003",
+  "contract": {
+    "id": "contract_w2s_generalization",
+    "version": 1
+  },
+  "source": "podium/coding-generic/ws_003",
+  "summary": "Bootstrapping through intermediate capacities (weak\u2192medium\u2192strong) consistently outperforms direct weak\u2192strong supervision across all 7 tested configurations. Average accuracy advantage is 6.4%, driven by error pattern dilution rather than error compounding. Lower weak supervisor accuracy predicts higher bootstrap advantage (r=-0.789).",
+  "status": "completed_with_limitations",
+  "claims": [
+    "Staged bootstrapping beats direct weak-to-strong supervision in all 7 tested capability gap configurations",
+    "Bootstrap advantage ranges from 2.4% to 10.8% accuracy improvement, averaging 6.4%",
+    "Key mechanism is error pattern breaking: bootstrap reduces error overlap from 29.9% to 21.9%",
+    "Lower weak supervisor accuracy strongly predicts higher bootstrap advantage (r=-0.789)",
+    "Intermediate supervisor quality improves significantly even under weak supervision (+12.5% accuracy)",
+    "Bootstrap advantage is highest when weak model is very poor and total capability gap is large"
+  ],
+  "evidence": [
+    {
+      "summary": "Raw experimental data: 7 configurations \u00d7 5 trials each, comparing direct vs bootstrap supervision",
+      "path": "artifact/results/experiment_results.json"
+    },
+    {
+      "summary": "Statistical summary: bootstrap wins 7/7 cases, average advantage 6.4%",
+      "path": "artifact/results/summary_stats.json"
+    },
+    {
+      "summary": "Pattern analysis showing correlation between weak accuracy and bootstrap advantage",
+      "path": "artifact/results/early_signals.json"
+    },
+    {
+      "summary": "Detailed gap analysis and error overlap measurements",
+      "path": "artifact/results/detailed_analysis.json"
+    },
+    {
+      "summary": "Main experimental code with synthetic model implementation",
+      "path": "artifact/code/w2s_bootstrap_experiment.py"
+    },
+    {
+      "summary": "Results analysis code for pattern identification",
+      "path": "artifact/code/analyze_results.py"
+    }
+  ],
+  "limitations": [
+    "Synthetic setup only - may not generalize to real LLM training dynamics",
+    "No failure cases observed - parameter range may be too narrow",
+    "Simplified systematic error model - real errors likely more complex",
+    "Small sample size - only 7 configurations tested",
+    "Goodhart risk - optimizing for accuracy may miss safety-relevant failure modes",
+    "Missing investigation of deception, goal misgeneralization, and other superalignment failure modes"
+  ],
+  "next": [
+    "Test bootstrapping on realistic language model tasks beyond synthetic classification",
+    "Identify failure regimes where bootstrapping hurts rather than helps",
+    "Investigate whether results hold for safety-relevant capabilities vs just accuracy",
+    "Explore multi-stage bootstrapping (weak\u2192medium1\u2192medium2\u2192strong)",
+    "Test on real capability elicitation tasks (e.g., truthfulness, harmlessness)"
+  ],
+  "used_refs": [
+    "alexandria://papers/weak-to-strong-generalization.md"
+  ]
+}

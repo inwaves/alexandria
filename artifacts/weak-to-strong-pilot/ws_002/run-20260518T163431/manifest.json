@@ -1,0 +1,20 @@
+{
+  "workstream_id": "ws_002",
+  "contract": {
+    "id": "contract_w2s_generalization",
+    "version": 1
+  },
+  "source": "podium/coding-generic/ws_002",
+  "summary": "Auxiliary confidence loss: does it actually reduce imitation?",
+  "status": "completed_with_limitations",
+  "claims": [],
+  "limitations": [],
+  "next": [],
+  "used_refs": [],
+  "evidence": [
+    {
+      "summary": "Auxiliary confidence loss: does it actually reduce imitation?",
+      "path": "artifact/report.md"
+    }
+  ]
+}

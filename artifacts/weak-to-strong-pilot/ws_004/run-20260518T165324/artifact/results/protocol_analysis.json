@@ -1,0 +1,107 @@
+{
+  "budget_results": {
+    "5": {
+      "base_heldout": 0.8266666666666667,
+      "base_test": 0.8033333333333333,
+      "best_heldout": 0.8266666666666667,
+      "best_test": 0.8033333333333333,
+      "apparent_improvement": 0.0,
+      "actual_improvement": 0.0,
+      "optimism_bias": 0.0,
+      "bias_ratio": 0.0,
+      "n_submissions": 5
+    },
+    "10": {
+      "base_heldout": 0.8266666666666667,
+      "base_test": 0.8033333333333333,
+      "best_heldout": 0.8266666666666667,
+      "best_test": 0.8033333333333333,
+      "apparent_improvement": 0.0,
+      "actual_improvement": 0.0,
+      "optimism_bias": 0.0,
+      "bias_ratio": 0.0,
+      "n_submissions": 10
+    },
+    "20": {
+      "base_heldout": 0.8266666666666667,
+      "base_test": 0.8033333333333333,
+      "best_heldout": 0.8266666666666667,
+      "best_test": 0.8033333333333333,
+      "apparent_improvement": 0.0,
+      "actual_improvement": 0.0,
+      "optimism_bias": 0.0,
+      "bias_ratio": 0.0,
+      "n_submissions": 20
+    },
+    "50": {
+      "base_heldout": 0.8266666666666667,
+      "base_test": 0.8033333333333333,
+      "best_heldout": 0.83,
+      "best_test": 0.7966666666666666,
+      "apparent_improvement": 0.0033333333333332993,
+      "actual_improvement": -0.00666666666666671,
+      "optimism_bias": 0.010000000000000009,
+      "bias_ratio": 3.0000000000000333,
+      "n_submissions": 50
+    },
+    "100": {
+      "base_heldout": 0.8266666666666667,
+      "base_test": 0.8033333333333333,
+      "best_heldout": 0.83,
+      "best_test": 0.8033333333333333,
+      "apparent_improvement": 0.0033333333333332993,
+      "actual_improvement": 0.0,
+      "optimism_bias": 0.0033333333333332993,
+      "bias_ratio": 1.0,
+      "n_submissions": 100
+    }
+  },
+  "rotation_results": [
+    {
+      "rotation": 0,
+      "best_rotation_score": 0.8666666666666667,
+      "test_score": 0.8033333333333333
+    },
+    {
+      "rotation": 1,
+      "best_rotation_score": 0.85,
+      "test_score": 0.8033333333333333
+    },
+    {
+      "rotation": 2,
+      "best_rotation_score": 0.7,
+      "test_score": 0.8033333333333333
+    },
+    {
+      "rotation": 3,
+      "best_rotation_score": 0.8166666666666667,
+      "test_score": 0.8033333333333333
+    },
+    {
+      "rotation": 4,
+      "best_rotation_score": 0.9166666666666666,
+      "test_score": 0.8033333333333333
+    }
+  ],
+  "protocols": {
+    "submission_budget": {
+      "recommended_limit": 50,
+      "rationale": "Elbow point in bias curve at 50 submissions",
+      "expected_bias": 0.010000000000000009
+    },
+    "holdout_rotation": {
+      "recommended_rotations": 3,
+      "submissions_per_rotation": 16,
+      "rationale": "Limit exposure to any single held-out split"
+    },
+    "bias_correction": {
+      "method": "bootstrap_confidence_interval",
+      "description": "Estimate optimism bias via bootstrap resampling of held-out"
+    },
+    "early_stopping": {
+      "patience": 5,
+      "min_improvement": 0.001,
+      "description": "Stop if no meaningful improvement in held-out score"
+    }
+  }
+}
